@@ -83,22 +83,22 @@
   |  `Kokkos_WorkGraph.hpp` not a public header  |  `Kokkos_Core.hpp`  |  Improve API
   |  Raise deprecation warnings if non-empty WorkTag class is used  |  Use empty WorkTag class  |  Improve API
   |  `: secName(sectionName)` in `class ProfilingSection`  |  Remove constructor  |  Improve API
-  |  `KOKKOS_DEPRECATED std::string getName() { return secName; }`  |  Remove function  |  Improve API
-  |  `KOKKOS_DEPRECATED uint32_t getSectionID() { return secID; }`  |  Remove function           |  Improve API
+  |  `std::string getName() { return secName; }`  |  Remove function  |  Improve API
+  |  `uint32_t getSectionID() { return secID; }`  |  Remove function           |  Improve API
   |  `const std::string secName;`  |  Remove variable  |  Improve API
-  |  `using ActiveExecutionMemorySpace KOKKOS_DEPRECATED`  |  Remove type alias  |  Improve API
-  |  `using ActiveExecutionMemorySpace KOKKOS_DEPRECATED`  |  Remove type alias  |  Improve API
-  |  `using is_array_layout KOKKOS_DEPRECATED`  |  Remove type alias  |  Improve API 
-  |  `using is_execution_policy KOKKOS_DEPRECATED`  |  Remove type alias  |  Improve API
-  |  `using is_execution_space KOKKOS_DEPRECATED`  |  Remove type alias  |  Improve API
-  |  `using is_memory_space KOKKOS_DEPRECATED`  |  Remove type alias  |  Improve API
-  |  `using is_memory_traits KOKKOS_DEPRECATED`  |  Remove type alias  |  Improve API
-  |  `using host_memory_space KOKKOS_DEPRECATED`  |  Remove type alias  |  Improve API
-  |  `using host_execution_space KOKKOS_DEPRECATED`  |  Remove type alias  |  Improve API           
-  |  `using host_mirror_space KOKKOS_DEPRECATED`  |  Remove type alias  |  Improve API
+  |  `using ActiveExecutionMemorySpace`  |  Remove type alias  |  Improve API
+  |  `using ActiveExecutionMemorySpace`  |  Remove type alias  |  Improve API
+  |  `using is_array_layout`  |  Remove type alias  |  Improve API 
+  |  `using is_execution_policy`  |  Remove type alias  |  Improve API
+  |  `using is_execution_space`  |  Remove type alias  |  Improve API
+  |  `using is_memory_space`  |  Remove type alias  |  Improve API
+  |  `using is_memory_traits`  |  Remove type alias  |  Improve API
+  |  `using host_memory_space`  |  Remove type alias  |  Improve API
+  |  `using host_execution_space`  |  Remove type alias  |  Improve API           
+  |  `using host_mirror_space`  |  Remove type alias  |  Improve API
   |  `namespace Impl`  |  Remove `namespace Impl`  |  Improve API
-  |  `using is_space KOKKOS_DEPRECATED`  |  Remove type alias  |  Improve API
-  |  `using SpaceAccessibility KOKKOS_DEPRECATED`  |  Remove type alias  |  Improve API
+  |  `using is_space`  |  Remove type alias  |  Improve API
+  |  `using SpaceAccessibility`  |  Remove type alias  |  Improve API
   |  `#define KOKKOS_RESTRICT_EXECUTION_TO_DATA(DATA_SPACE, DATA_PTR)`  |  Remove macro  |  Improve API
   |  `#define KOKKOS_RESTRICT_EXECUTION_TO_(DATA_SPACE)`  |  Remove macro  |  Improve API
   |  `parallel_*` overloads taking the label as trailing argument  |  `Kokkos::parallel_*("KokkosViewLabel", policy, f);`  |  Consistent ordering of parameters
@@ -136,28 +136,28 @@
   |  `void CudaSpace::access_error()`  |  Remove function  |  Improve API
   |  `int CudaUVMSpace::number_of_allocations()` |  Remove function  |  Improve API
   |  `inline void cuda_internal_safe_call_deprecated()`  |  `#define CUDA_SAFE_CALL(call)`  |  Improve API
-  |  `KOKKOS_DEPRECATED static void access_error();`  |  Remove function  |  Improve API  
-  |  `KOKKOS_DEPRECATED static void access_error(const void* const);`  |  Remove function
-  |  `KOKKOS_DEPRECATED static int number_of_allocations();`  |  Remove function  |  Improve API 
-  |  `using ActiveExecutionMemorySpace KOKKOS_DEPRECATED`  |  Remove type alias  |  Improve API
+  |  `static void access_error();`  |  Remove function  |  Improve API  
+  |  `static void access_error(const void* const);`  |  Remove function
+  |  `static int number_of_allocations();`  |  Remove function  |  Improve API 
+  |  `using ActiveExecutionMemorySpace`  |  Remove type alias  |  Improve API
   |  |  **HIP DEPRECATION**
-  |  `using ActiveExecutionMemorySpace KOKKOS_DEPRECATED`  |  Remove type alias  |  Improve API
-  |  `KOKKOS_DEPRECATED void Experimental::HIPSpace::access_error()`  |  Remove function  |  Improve API
-  |  `KOKKOS_DEPRECATED void Experimental::HIPSpace::access_error(const void* const)`  |  Remove function  |  Improve API
-  |  `KOKKOS_DEPRECATED int vector_length() const { return impl_vector_length();`  |  Remove function 
+  |  `using ActiveExecutionMemorySpace`  |  Remove type alias  |  Improve API
+  |  `void Experimental::HIPSpace::access_error()`  |  Remove function  |  Improve API
+  |  `void Experimental::HIPSpace::access_error(const void* const)`  |  Remove function  |  Improve API
+  |  `int vector_length() const { return impl_vector_length();`  |  Remove function 
   |  `inline void hip_internal_safe_call_deprecated  |  Remove function  |  Improve API
   |  `#define HIP_SAFE_CALL(call)`  |  Remove macro  |  Improve API
   |  |**SYCL DEPRECATION**
-  |  `using ActiveExecutionMemorySpace KOKKOS_DEPRECATED`  |  Remove type alias  |  Improve API
+  |  `using ActiveExecutionMemorySpace`  |  Remove type alias  |  Improve API
   |  |  **PROMOTION TO KOKKOKS NAMESPACE** 
   |  `Kokkos::Experimental::aMathFunction`  |  Use `namespace Kokkos`  |  Promote to Kokkos namespace
   |  `Kokkos::Experimental::clamp`  |  Use `namespace Kokkos`  |  Promote to Kokkos namespace
   |  `Kokkos::Experimental::max;`  |  Use `namespace Kokkos`  |  Promote to Kokkos namespace
   |  `Kokkos::Experimental::min;`  |  Use `namespace Kokkos`  |  Promote to Kokkos namespace
   |  `Kokkos::Experimental::minmax;`  |  Use `namespace Kokkos`  |  Promote to Kokkos namespace
-  |  `using Iterate KOKKOS_DEPRECATED`  |  Remove type alias  |  Improve API
-  |  `using MDRangePolicy KOKKOS_DEPRECATED`  |  Remove type alias  |  Improve API 
-  |  `using Rank KOKKOS_DEPRECATED`  |  Remove type alias  |  Improve API  
+  |  `using Iterate`  |  Remove type alias  |  Improve API
+  |  `using MDRangePolicy`  |  Remove type alias  |  Improve API 
+  |  `using Rank`  |  Remove type alias  |  Improve API  
   |  |  **UNIT TEST DEPRECATION**
   |  Test reduction of a pointer to a 1D array `parallel_reduce(range, functor, sums_ptr)`  |  Remove test  |  Update testing
   |  `void take_initialization_settings(Kokkos::InitializationSettings const&) {}`  |  Remove test  |  Update testing
