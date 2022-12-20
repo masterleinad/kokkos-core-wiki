@@ -12,18 +12,18 @@
   |  Overloads of `Kokkos::sort` taking a parameter `bool always_use_kokkos_sort`  |  Use `Kokkos::BinSort` if required, or call `Kokkos::sort` without bool parameter  |  Updating overloads
   |  |  **PUBLIC HEADERS UPDATES** 
   |  Guard against non-public header inclusion  |  **Core PUBLIC HEADERS**:  |  Improve API
-  |  `Kokkos_Core.hpp`,
-  |  `Kokkos_Macros.hpp`,
-  |  `Kokkos_Atomic.hpp`,
-  |  `Kokkos_DetectionIdiom.hpp`,
-  |  `Kokkos_MathematicalConstants.hpp`,
-  |  `Kokkos_MathematicalFunctions.hpp`,
-  |  `Kokkos_NumericTraits.hpp`,
-  |  `Kokkos_Array.hpp`,
-  |  `Kokkos_Complex.hpp`,
-  |  `Kokkos_Pair.hpp`,
-  |  `Kokkos_Half.hpp`,
-  |  `Kokkos_Timer.hpp`
+  |  | `Kokkos_Core.hpp`,
+  |  | `Kokkos_Macros.hpp`,
+  |  | `Kokkos_Atomic.hpp`,
+  |  | `Kokkos_DetectionIdiom.hpp`,
+  |  | `Kokkos_MathematicalConstants.hpp`,
+  |  | `Kokkos_MathematicalFunctions.hpp`,
+  |  | `Kokkos_NumericTraits.hpp`,
+  |  | `Kokkos_Array.hpp`,
+  |  | `Kokkos_Complex.hpp`,
+  |  | `Kokkos_Pair.hpp`,
+  |  | `Kokkos_Half.hpp`,
+  |  | `Kokkos_Timer.hpp`
   |  Guard against non-public header inclusion  |  **Algorithms PUBLIC HEADERS**:  |  Improve API
   |  |  `Kokkos_StdAlgorithms.hpp`
   |  |  `Kokkos_Random.hpp`,
