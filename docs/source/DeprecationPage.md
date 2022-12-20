@@ -158,9 +158,3 @@
   |  `using Iterate`  |  Remove type alias  |  Improve API
   |  `using MDRangePolicy`  |  Remove type alias  |  Improve API 
   |  `using Rank`  |  Remove type alias  |  Improve API  
-  |  |  **UNIT TEST DEPRECATION**
-  |  Test reduction of a pointer to a 1D array `parallel_reduce(range, functor, sums_ptr)`  |  Remove test  |  Update testing
-  |  `void take_initialization_settings(Kokkos::InitializationSettings const&)`  |  Remove test  |  Update testing
-  |  Test scalar result in host pointer in `parallel_reduce` `(ASSERT_EQ(host_result(j), (ScalarType)correct);`  |  Remove test case  |  Update testing
-  |  Kokkos::parallel_reduce(policy, ReducerWithJoinThatTakesVolatileQualifiedArgs{}, result);  |  Remove test case  |  Update testing
-  |  `TEST(openmp, partition_master)`  |  Remove test  |  Update testing
