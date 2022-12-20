@@ -83,8 +83,8 @@
   |  `Kokkos_WorkGraph.hpp` not a public header  |  `Kokkos_Core.hpp`  |  Improve API
   |  Raise deprecation warnings if non-empty WorkTag class is used  |  Use empty WorkTag class  |  Improve API
   |  `: secName(sectionName)` in `class ProfilingSection`  |  Remove constructor  |  Improve API
-  |  `std::string getName() { return secName; }`  |  Remove function  |  Improve API
-  |  `uint32_t getSectionID() { return secID; }`  |  Remove function           |  Improve API
+  |  `std::string getName()`  |  Remove function  |  Improve API
+  |  `uint32_t getSectionID()`  |  Remove function           |  Improve API
   |  `const std::string secName;`  |  Remove variable  |  Improve API
   |  `using ActiveExecutionMemorySpace`  |  Remove type alias  |  Improve API
   |  `using ActiveExecutionMemorySpace`  |  Remove type alias  |  Improve API
@@ -115,8 +115,8 @@
   |  Warn about `parallel_reduce` cases that call `join()` with arguments qualified by `volatile` keyword  |  Remove `volatile` overloads  |  Streamline API
   |  `static void partition_master(F const& f, int requested_num_partitions = 0, int requested_partition_size = 0)`  |  Remove function  |  Improve API
   |  `void OpenMPInternal::validate_partition_impl(const int nthreads, int &num_partitions, int &partition_size)`  |  Remove function  |  Improve API
-  |  `std::vector<OpenMP> OpenMP::partition(...) { return std::vector<OpenMP>(1); }`  |  Remove function  |  Improve API
-  |  `OpenMP OpenMP::create_instance(...) { return OpenMP(); }`  |  Remove function  |  Improve API
+  |  `std::vector<OpenMP> OpenMP::partition(...)`  |  Remove function  |  Improve API
+  |  `OpenMP OpenMP::create_instance(...)`  |  Remove function  |  Improve API
   |  `static void validate_partition(const int nthreads, int& num_partitions, int& partition_size)`  |  Remove function  |  Improve API
   |  `!std::is_void<T>::value &&`  |  `std::is_empty<T>::value &&` (C++17)  |  Improve API
   |  `static void validate_partition_impl(const int nthreads, int& num_partitions, int& partition_size)`  |  Remove function  |  Improve API
@@ -144,7 +144,7 @@
   |  `using ActiveExecutionMemorySpace`  |  Remove type alias  |  Improve API
   |  `void Experimental::HIPSpace::access_error()`  |  Remove function  |  Improve API
   |  `void Experimental::HIPSpace::access_error(const void* const)`  |  Remove function  |  Improve API
-  |  `int vector_length() const { return impl_vector_length();`  |  Remove function 
+  |  `int vector_length() const`  |  Remove function 
   |  `inline void hip_internal_safe_call_deprecated  |  Remove function  |  Improve API
   |  `#define HIP_SAFE_CALL(call)`  |  Remove macro  |  Improve API
   |  |**SYCL DEPRECATION**
@@ -160,7 +160,7 @@
   |  `using Rank`  |  Remove type alias  |  Improve API  
   |  |  **UNIT TEST DEPRECATION**
   |  Test reduction of a pointer to a 1D array `parallel_reduce(range, functor, sums_ptr)`  |  Remove test  |  Update testing
-  |  `void take_initialization_settings(Kokkos::InitializationSettings const&) {}`  |  Remove test  |  Update testing
+  |  `void take_initialization_settings(Kokkos::InitializationSettings const&)`  |  Remove test  |  Update testing
   |  Test scalar result in host pointer in `parallel_reduce` `(ASSERT_EQ(host_result(j), (ScalarType)correct);`  |  Remove test case  |  Update testing
   |  Kokkos::parallel_reduce(policy, ReducerWithJoinThatTakesVolatileQualifiedArgs{}, result);  |  Remove test case  |  Update testing
   |  `TEST(openmp, partition_master)`  |  Remove test  |  Update testing
