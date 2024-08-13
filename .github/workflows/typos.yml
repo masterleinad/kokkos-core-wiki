@@ -14,3 +14,4 @@ jobs:
       with:
         write_changes: true
         files: ./docs/source/ProgrammingGuide/ ./docs/source/API/ ./docs/source/*.rst ./docs/source/*.md
+        config: ./.typos.toml
