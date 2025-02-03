@@ -48,6 +48,9 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: site
+      - name: List files
+        run: |
+          ls -laht
       - name: Deploy docs
         uses: JamesIves/github-pages-deploy-action@v4
         with:
