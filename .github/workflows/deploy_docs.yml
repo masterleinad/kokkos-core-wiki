@@ -2,7 +2,6 @@ name: Build and deploy docs
 
 on:
   push:
-    branches: [ main ]
   pull_request:
 
 jobs:
@@ -38,7 +37,6 @@ jobs:
         run: touch .nojekyll
 
   deploy-docs:
-    if: ${{ github.ref == 'refs/heads/main' }}
     needs: build
     runs-on: ubuntu-latest
     env:
